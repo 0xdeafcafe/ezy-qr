@@ -20,7 +20,7 @@
 		document.querySelector('#button').addEventListener('click', () => {
 			const content = document.querySelector('#content').value;
 
-			new QRCode(document.getElementById(content), 'http://jindo.dev.naver.com/collie');
+			new QRCode(document.querySelector('#qrcode'), document.getElementById(content));
 		});
 	</script>
 </body>
