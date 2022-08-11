@@ -20,7 +20,7 @@
 		document.querySelector('#button').addEventListener('click', () => {
 			const content = document.querySelector('#content').value;
 
-			new QRCode(document.querySelector('#qrcode'), document.getElementById(content));
+			new QRCode(document.querySelector('#qrcode'), content);
 		});
 	</script>
 </body>
