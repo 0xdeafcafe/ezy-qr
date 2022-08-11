@@ -20,6 +20,9 @@
 		document.querySelector('#button').addEventListener('click', () => {
 			const content = document.querySelector('#content').value;
 
+			// hacky
+			document.querySelector('qrcode').innerHTML = '';
+
 			new QRCode(document.querySelector('#qrcode'), content);
 		});
 	</script>
